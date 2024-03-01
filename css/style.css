@@ -1,0 +1,219 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body, html {
+    color: #161623;
+}
+
+
+header {
+
+    position: fixed;
+    display: flex;
+
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+    padding: 0.1em;
+
+}
+
+span {
+    font-size: 40px;
+    color: #fff;
+}
+
+main {
+    background-image: url('../imagens/imagem-lencois.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+div.titulo-lencois-maranhenses {
+
+    position: relative;
+    color: #fff;
+
+    margin: 0 620px 0 620px;
+    text-align: center;
+
+    top: 50%;
+}
+
+.titulo-lencois-maranhenses h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 9px 9px 10px #000;
+}
+
+nav.nav-bar {
+
+    display: flex;
+    gap: 6rem;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    cursor: pointer;
+    align-items: center;
+
+}
+
+nav.nav-bar  a {
+
+    text-shadow: 4px 4px 8px #000;
+    text-transform: capitalize;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+nav.nav-bar a::after {
+
+    content: "";
+    position: absolute;
+    background-color: #fff;
+
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s all;
+
+}
+
+.nav-bar a:hover {
+
+    color: #fff;
+
+}
+
+.nav-bar a:hover::after {
+
+    width: 100%;
+
+}
+
+#btn-traduzir {
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*---------------------------------*/
+
+
+
+@media screen and (min-width: 1024px) {
+
+
+    span {
+        font-size: 40px;
+        margin-left: -100px;
+    }
+
+    main {
+        background-image: url('../imagens/imagem-lencois.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    nav.nav-bar {
+
+        margin-left: -100px;
+        display: flex;
+        gap: 4rem;
+    
+        font-size: 20px;
+        font-weight: 600;
+    
+        cursor: pointer;
+        align-items: center;
+    
+    }
+    
+    
+    div.titulo-lencois-maranhenses {
+
+        position: relative;
+        color: #fff;
+
+        margin: 0 100px 0 100px;
+        text-align: center;
+
+        top: 50%;
+    }
+
+    .titulo-lencois-maranhenses h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+/*---------------------------------------*/
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    span {
+        font-size: 35px;
+    }
+
+    nav.nav-bar {
+
+        margin-left: -100px;
+        display: flex;
+        gap: 4rem;
+    
+        font-size: 20px;
+        font-weight: 600;
+    
+        cursor: pointer;
+        align-items: center;
+    
+    }
+
+    div.titulo-lencois-maranhenses {
+
+        position: relative;
+        color: #fff;
+
+        margin: 0 100px 0 100px;
+        text-align: center;
+
+        top: 50%;
+    }
+
+    .titulo-lencois-maranhenses h1 {
+        font-size: 50px;
+    }
+} 
